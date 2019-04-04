@@ -119,29 +119,3 @@ if __name__ == '__main__':
     args = parser.parse_args()
     lru_cache = LRU(capacity=args.capacity)
     app.run()
-
-# @app.route('/')
-# def home_page():
-#     return "This is the home"
-
-# quotes_g = [
-#     "A noble spirit embiggens the smallest man! ~ Jebediah Springfield",
-#     "If there is a way to do it better... find it. ~ Thomas Edison",
-#     "No one knows what he can do till he tries. ~ Publilius Syrus"
-# ]
-
-# class QView(FlaskView):
-#     @route('/ab')
-#     def index(self):
-#         return "<br>".join(quotes_g)
-
-# QView.register(app, route_prefix='/api/v1/')
-# QView.register(app)
-
-# @app.route('/api/v1/get/<keyId>',methods=['GET'])
-# def getEmp(empId):
-#     usr = [ emp for emp in empDB if (emp['id'] == empId) ] 
-#     return jsonify({'emp':usr})
-
-# @app.route('/api/v1/put/<keyId>',methods=['PUT'])
-# def updateEmp(empId):
